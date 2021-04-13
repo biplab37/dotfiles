@@ -1,0 +1,17 @@
+## Global
+alias -g inst="sudo apt install"
+alias -g bat="bat --plain"
+
+alias open="xdg-open"
+alias f='fzf'
+alias o='open'
+alias glog='git --no-pager log --oneline'
+
+
+## Suffix
+alias -s md=typora
+alias -s pdf=okular
+
+## Paths
+alias gtw="cd /media/biplab/e271932f-bbce-422e-967e-20895f7111c9"
+alias gtr="cd /media/biplab/e271932f-bbce-422e-967e-20895f7111c9/Work/Renormalisation"
