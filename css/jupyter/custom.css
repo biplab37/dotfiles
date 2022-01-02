@@ -1,0 +1,257 @@
+#ipython-main-app {
+    position: relative;
+}
+#jupyter-main-app {
+    position: relative;
+}
+
+#notebook-container{
+    box-shadow: none !important;
+}
+
+/* SCROLL BAR */
+::-webkit-scrollbar {
+    max-width: 10px;
+    max-height: 10px;
+    border-radius: 5px;
+    border: none;
+}
+::-webkit-scrollbar-track {
+    border: 3px solid white;
+    background-color: #b6b2b2;
+}
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    border: none;
+    background: #0077ffb0;
+    background-clip: content-box;
+    max-width: 10px;
+}
+
+body {
+    font-family: "Open Sans";
+    font-weight: 600;
+}
+
+.container {
+    width: 80% !important;
+}
+
+.notebook_app {
+    background: #fff !important;
+}
+
+.notebook_app::-webkit-scrollbar {
+    max-width: 0;
+}
+
+body > #header {
+    background:  #ffffff;
+    border-bottom: 1px solid #aaa;
+}
+
+.navbar-default {
+    background: none;
+    border: none;
+}
+
+.navbar-default .navbar-nav > li > a, #kernel_indicator {
+    color: rgba(0, 0, 0, 0.75);
+    border-bottom: 2px solid #fff;
+    transition: all 0.25s;
+}
+
+.navbar-default .navbar-nav > li > a:hover, #kernel_indicator:hover {
+    border-bottom: 2px solid #4FC1E9;
+    color: rgb(0, 0, 0);
+}
+
+div.input_area {
+    border: none;
+    border-radius: 0;
+    background: #f7f7f7;
+    line-height: 1.5em;
+    margin: 0.5em 0;
+    padding: 0;
+}
+
+div.cell {
+    transition: all 0.25s;
+    border: none;
+    position: relative;
+    top: 0;
+}
+
+div.cell.selected, div.cell.selected.jupyter-soft-selected {
+    border: none;
+    background: transparent;
+    box-shadow: 0 6px 18px #aaa;
+    z-index: 10;
+    top: -10px;
+}
+
+
+div#pager {
+    opacity: 0.85;
+    z-index: 9999;
+}
+
+.navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus {
+    color: rgb(0, 0, 0);
+    border-bottom: 2px solid #fff;
+}
+
+.dropdown-menu {
+    z-index: 999999 !important;
+    background-color: #e7f1f1;
+    /* opacity: 0.95; */
+    /* box-shadow: 4px 12px 14px #aaa; */
+}
+
+.dropdown-menu > li > a {
+    color: rgb(0, 0, 0);
+}
+
+.dropdown-menu > .disabled > a, .dropdown-menu > .disabled > a:hover, .dropdown-menu > .disabled > a:focus {
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.navbar-nav > li > .dropdown-menu {
+    border: none;
+    box-shadow: none;
+}
+
+div.output_wrapper {
+    background: rgb(255, 255, 255);
+}
+
+.output > .output_area > .output_png {
+    align-items: center;
+}
+
+div.cell.unselected div.output_area{
+    /* box-shadow: inset 0 0 25px #aaa; */
+    padding: 0 1em;
+    overflow-x: auto;
+    transition: all 0.25s;
+}
+
+div.cell.selected .output_area {
+    /* box-shadow: inset 0 0 5px #aaa; */
+    padding: 0em 1em;
+    overflow-x: auto;
+}
+
+div.cell.selected .div.output_scroll {
+    box-shadow: none;
+}
+
+div.output_wrapper {
+    /* margin: 0 0 1em; */
+    transition: all 0.25s;
+}
+
+div.cell.selected .output_wrapper {
+    margin: 0;
+}
+
+.dataframe {
+    background: #fff;
+    box-shadow: 0px 1px 2px #bbb;
+}
+
+.dataframe thead th, .dataframe tbody td {
+    text-align: right;
+    padding: 1em;
+}
+
+.output, div.output_scroll {
+    box-shadow: none;
+}
+
+.output {
+    font-weight: 400;
+}
+
+.btn-default {
+    border-color: #fff;
+}
+
+.btn-default:hover {
+    background-color: #afdbff;
+}
+
+#toc-header {
+    color: #2a7bbd;
+    align-content: center;
+}
+
+#toc-wrapper {
+    border-left: 5px solid #2a7bbd !important;
+    box-shadow: 0 6px 18px #aaa;
+}
+
+#toc {
+    padding-top: 10px;
+    border-top: 2px #2a7bbd;
+}
+
+.toc > ul {
+    font-weight: 600;
+    font-size: 14px;
+    font-family: "Open Sans";
+}
+
+#toc a:hover {
+    color: #2a7bbd;
+}
+
+
+
+.rendered_html pre code {
+    background: #f4f4f4;
+    border: 1px solid #ddd;
+    border-left: 3px solid #2a7bbd;
+    color: #444;
+    page-break-inside: avoid;
+    font-family: "Fira Code";
+    /* font-size: 15px; */
+    line-height: 1.6;
+    /* margin-bottom: 1.6em; */
+    max-width: 100%;
+    overflow: auto;
+    padding: 0.1em 1.5em;
+    display: block;
+    word-wrap: break-word;
+}
+
+.rendered_html li p{
+    font-family: "Fira Sans";
+    font-size: 15px;
+}
+
+
+.CodeMirror pre {
+    font-family: "Fira Code" !important;
+    font-weight: 400;
+}
+
+div.prompt_container {
+    align-items: center;
+    border-right: 2px;
+}
+div.prompt.input_prompt {
+    font-family: "Hack";
+}
+
+h1, .h1 {
+    font-size: 30px;
+    font-family: "Open Sans";
+    font-size: 2.5em !important;
+    color: #2a7bbd;
+} 
+
+.celltoolbar {
+    background-color: #fff;
+    border: none;
+}
